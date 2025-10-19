@@ -7,44 +7,48 @@
     <title>AI Poem generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
 
-    <main>
-      <form id="poem-form">
-        <label for="theme-input">Enter a theme for your poem:</label>
-        <input
-          type="text"
-          id="theme-input"
-          name="theme"
-          placeholder="e.g., love, nature, friendship"
-          required
-          autocomplete="off"
-        />
-        <button type="submit">Generate Poem</button>
-      </form>
+      <main>
+        <form id="poem-form">
+          <label for="theme-input">Enter a poem theme:</label>
+          <input
+            type="text"
+            id="theme-input"
+            name="theme"
+            placeholder="e.g., love, nature, friendship"
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <button type="submit" class="button">Generate</button>
+        </form>
 
-      <section id="poem-output" class="hidden">
-        <h2>Your AI-Generated Poem:</h2>
-        <p id="poem-text"></p>
-      </section>
-    </main>
+        <section id="poem-output" class="hidden">
+          <h2>Your AI-Generated Poem:</h2>
+          <p id="poem-text" class="poem"></p>
+        </section>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/adeogunesther95-lab" target="_blank"
-        >Esther Adeogun</a
-      >, open sourced on
-      <a
-        href="https://github.com/adeogunesther95-lab/SheCodes-PlusAI-Wk2"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://ai-poem-generat.netlify.app/" target="_blank">Netlify</a>
-    </footer>
-
+      <footer>
+        This project was coded by
+        <a href="https://github.com/adeogunesther95-lab" target="_blank"
+          >Esther Adeogun</a
+        >, open sourced on
+        <a
+          href="https://github.com/adeogunesther95-lab/SheCodes-PlusAI-Wk2"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://ai-poem-generat.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
