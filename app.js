@@ -19,6 +19,12 @@ function generatePoem(event) {
     "The poem should be creative, engaging and based on specific theme inputted by the user. Please write the output in basic HTML format. Please include poem source where available.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemOutputElement = document.querySelector("#poem-output");
+  poemOutputElement.classList.remove("hidden");
+
+  let poemTextElement = document.querySelector("#poem-text");
+  poemTextElement.innerHTML = `<div class = "generating"> ⌚ Generating your poem about <strong>${theme}</strong>...</div>`;
+
   axios.get(apiUrl).then(displayPoem);
 }
 

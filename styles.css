@@ -66,9 +66,29 @@ form {
   color: #4a3f7c;
 }
 
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #272044;
+  margin-bottom: 20px;
+}
+
 footer {
   text-align: center;
   font-size: 14px;
   margin-top: 50px;
   color: #888;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
