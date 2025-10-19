@@ -7,7 +7,29 @@
     <title>AI Poem generator</title>
   </head>
   <body>
-    <h1>Generate Poem</h1>
+    <header>
+      <h1>AI Poem Generator</h1>
+    </header>
+
+    <main>
+      <form id="poem-form">
+        <label for="theme-input">Enter a theme for your poem:</label>
+        <input
+          type="text"
+          id="theme-input"
+          name="theme"
+          placeholder="e.g., love, nature, friendship"
+          required
+          autocomplete="off"
+        />
+        <button type="submit">Generate Poem</button>
+      </form>
+
+      <section id="poem-output" class="hidden">
+        <h2>Your AI-Generated Poem:</h2>
+        <p id="poem-text"></p>
+      </section>
+    </main>
 
     <footer>
       This project was coded by
